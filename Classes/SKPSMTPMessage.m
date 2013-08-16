@@ -266,6 +266,7 @@ NSString *kSKPSMTPPartContentTransferEncodingKey = @"kSKPSMTPPartContentTransfer
                               forMode:NSDefaultRunLoopMode];
             [stream release];
             stream = nil; // stream is ivar, so reinit it
+            inputStream = nil;
             
             if (sendState != kSKPSMTPMessageSent)
             {
